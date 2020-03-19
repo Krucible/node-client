@@ -15,7 +15,7 @@ npm install @krucible/krucible-client
 ## Quick Start
 
 ```javascript
-const KrucibleClient = require("@krucible/krucible-client");
+const {KrucibleClient} = require("@krucible/krucible-client");
 
 // API key and account ID can be obtained at https://usekrucible.com/api-keys
 const client = new KrucibleClient({
