@@ -1,6 +1,6 @@
 # Node.js Krucible Client
 
-The official Node.js Krucible client. Provides a simple interface to create and
+The official Node.js [Krucible](https://usekrucible.com) client. Provides a simple interface to create and
 connect to temporary Kubernetes clusters for testing and development purposes.
 
 The client is written in Typescript but is callable from Javascript.
