@@ -38,7 +38,7 @@ export interface CreateClusterResult {
   kubeConfig: k8s.KubeConfig;
 }
 
-class KrucibleClient {
+export class KrucibleClient {
   requester: AxiosInstance;
   constructor(config: KrucibleClientConfig) {
     const baseURL = config.baseURL || "https://usekrucible.com/api";
@@ -95,8 +95,6 @@ class KrucibleClient {
     }
   }
 }
-
-export default KrucibleClient;
 
 async function test(): Promise<void> {
   const client = new KrucibleClient({
