@@ -4,6 +4,13 @@
   "description": "Node.js Krucible client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "kubernetes",
+    "krucible",
+    "temporary",
+    "testing",
+    "development"
+  ],
   "publishConfig": {
     "access": "public"
   },
