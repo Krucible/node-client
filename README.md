@@ -1,4 +1,4 @@
-# Node.js Krucible Client
+# Krucible Client
 
 The official Node.js [Krucible](https://usekrucible.com) client. Provides a simple interface to create and
 connect to temporary Kubernetes clusters for testing and development purposes.
