@@ -31,6 +31,7 @@ export interface KrucibleClientConfig {
 
 export interface CreateClusterConfig {
   displayName: string;
+  durationInHours?: number;
 }
 
 export interface CreateClusterResult {
@@ -53,7 +54,10 @@ export class KrucibleClient {
   }
 
   async createCluster(createConfig: CreateClusterConfig): Promise<CreateClusterResult> {
-    const createResp = await this.requester.post("/clusters", createConfig);
+    const createResp = await this.requester.post("/clusters", {
+      displayName: createConfig.displayName,
+      durationInHours: createConfig.durationInHours || 1,
+    });
     if (createResp.status !== 201) {
       console.error(createResp.data);
       throw new Error("could not create cluster");
